@@ -67,7 +67,7 @@ class RunTest:
         pass_num = float(len(pass_count))
         fail_num = float(len(fail_count))
         count_num = pass_num + fail_num
-        pass_result = "%.2f%%"%(pass_num/count_num*100)
+        pass_result = "%.2f%%" % (pass_num / count_num * 100)
         fail_result = "%.2f%%" % (fail_num / count_num * 100)
         print "通过接口：%s个".decode('UTF-8').encode(type) % len(pass_count)
         print "case_id为：%s \n".decode('UTF-8').encode(type) % pass_count
@@ -75,7 +75,7 @@ class RunTest:
         print "case_id为：%s \n".decode('UTF-8').encode(type) % fail_count
         print "未运行接口: %s个".decode('UTF-8').encode(type) % len(norun_count)
         print "case_id为：%s \n".decode('UTF-8').encode(type) % norun_count
-        print "通过率为%s, 失败率为%s \n\nclose..".decode('UTF-8').encode(type)%(pass_result, fail_result)
+        print "通过率为%s, 失败率为%s \n\nclose..".decode('UTF-8').encode(type) % (pass_result, fail_result)
         # self.send_mail.send_main(pass_count, fail_count)
 
 

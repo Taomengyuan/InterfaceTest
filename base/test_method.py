@@ -11,7 +11,7 @@ class TestMethod(unittest.TestCase):
         self.run = RunMain()
 
     def test_03(self):
-        url = 'http://coding.imooc.com/api/cate'
+        url = ''
         data = {
             'timestamp': '1507034803124',
             'uid': '5249191',
@@ -29,7 +29,7 @@ class TestMethod(unittest.TestCase):
 
     # @unittest.skip('test_02') #←---跳过 xxx 用例
     def test_02(self):
-        url = 'http://coding.imooc.com/api/cate'
+        url = ''
         data = {
             'timestamp': '1507034803124',
             'uid': '5249192',
